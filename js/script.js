@@ -1,18 +1,25 @@
-let slideArray = [];
-slideArray[0] = document.querySelector(".slide-1");
-slideArray[1] = document.querySelector(".slide-2");
-slideArray[2] = document.querySelector(".slide-3");
-slideArray[3] = document.querySelector(".slide-4");
-slideArray[4] = document.querySelector(".slide-5");
+const slideArray = document.querySelectorAll(".slides");
+const nextSlide = document.querySelector(".toggle-right");
+const prevSlide = document.querySelector(".toggle-left");
+const sliderBox = document.querySelector("section#slider");
 
-slideArray.forEach((el, index) => {
-  console.log(el);
-  el.addEventListener("click", e => {
-    if (index + 1 == slideArray.length) {
-      index = -1;
-    }
-    console.log(el);
-    el.classList.remove("active");
-    slideArray[index + 1].classList.add("active");
-  });
+let sliderController = direction => {
+  const currentSlide = document.querySelector("div.slides.active");
+  const maxSlideIndex = slideArray.length - 1;
+  const minSlideIndex = 0;
+  if (direction === "next") {
+  } else {
+  }
+};
+
+nextSlide.addEventListener("click", e => {
+  e.preventDefault();
+  sliderController("next");
 });
+
+prevSlide.addEventListener("click", e => {
+  e.preventDefault();
+  sliderController("prev");
+});
+
+console.log(window);
