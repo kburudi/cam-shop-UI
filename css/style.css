@@ -115,8 +115,8 @@ div.slide-4 {
   background-size: contain;
 }
 div.slide-5 {
-  background-image: url(../images/stand/camera-1745984_1280.jpg);
-  /* background-position: bottom center; */
+  background-image: url(../images/stand/stand-bg.jpg);
+  background-position: bottom center;
 }
 
 button.toggle-icons {
