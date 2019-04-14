@@ -102,20 +102,20 @@ button.standard-btn:hover {
 }
 
 div.slide-1 {
-  background-image: url(../images/camera/camera-275007_1280.jpg);
+  background-image: url(../images/camera/analogue-aperture-camera-1203803.jpg);
 }
 div.slide-2 {
-  background-image: url(../images/camera/camera-581126_1280.jpg);
+  background-image: url(../images/camera/camera-2325940_1280.jpg);
 }
 div.slide-3 {
-  background-image: url(../images/drone/dawn-1868870_1280.jpg);
+  background-image: url(../images/drone/drone-2724257_1280.jpg);
 }
 div.slide-4 {
-  background-image: url(../images/lens/camera-1721373_1280.jpg);
+  background-image: url(../images/lens/cameras-2443750_1280.jpg);
 }
 div.slide-5 {
-  background-image: url(../images/stand/tripod-390902_1280.jpg);
-  background-position: top center;
+  background-image: url(../images/stand/camera-1745984_1280.jpg);
+  /* background-position: bottom center; */
 }
 
 button.toggle-icons {
@@ -180,6 +180,10 @@ img {
   border-radius: 2px;
 }
 
+.prod-des {
+  text-align: center;
+}
+
 p.prod-name {
   padding: 10px 0 4px;
   color: #4f4f4f;
@@ -224,4 +228,18 @@ div.socials ul {
 .biz-info ul li a {
   font-weight: 300;
   font-size: 14px;
+}
+
+/* cameras page */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.zonecc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-area: 1 / 1 / 2 / 2;
 }
